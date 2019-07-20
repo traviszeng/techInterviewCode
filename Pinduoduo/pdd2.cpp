@@ -69,9 +69,9 @@ int main() {
 		max = *max_element(T.begin(), T.end());
 		
 		for ( k = 0; k < n; k++) {
-			if (k == prev || T[k] == 0)
+			if (k == prev || T[k] == 0) //如果和之前种的树一样或者树的数量为0
 				continue;
-			if (max-(M-max) <=1 || max == T[k])
+			if (max-(M-max) <=1 || max == T[k]) 
 				break;
 		}
 
